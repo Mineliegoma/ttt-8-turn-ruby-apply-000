@@ -20,7 +20,7 @@ def input_to_index(input)
 end
 
 
-def move (board,index,player_character="X")
+def move(board,index,player_character="X")
    
    board[index]=player_character
    
@@ -53,7 +53,7 @@ def turn(board)
    input =  gets
   index = input_to_index(input)
   
-  if 
+  if valid_move?(board,index)
    
   loop do
   
