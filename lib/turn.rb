@@ -46,7 +46,7 @@ def position_taken?(board,index)
     true
   end
 end
-#bbb
+#turn method
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -54,20 +54,10 @@ def turn(board)
   index = input_to_index(input)
   
   if valid_move?(board,index)
-    
-   
-  loop do
+    move(board,index)
+  else
+    turn(board)
   
-  
-   input
-  
-  input- 1
-  
-  break
-  if input.between?(0,8)
-    puts "valid input"
-end
-end
-    
-
+  end
+  display_board(board)
 end
