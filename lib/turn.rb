@@ -1,6 +1,5 @@
 
-
- #display board helper_method
+#display board helper_method
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
