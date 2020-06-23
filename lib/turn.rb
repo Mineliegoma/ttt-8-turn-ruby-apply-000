@@ -49,8 +49,9 @@ end
 #bbb
 
 def turn(board)
+  
   loop do
-  puts "Please enter 1-9:"
+  
   
    input
   
